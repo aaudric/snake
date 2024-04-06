@@ -10,7 +10,7 @@ red = (255, 0, 0)
 green = (0, 255, 0)
 blue = (0, 0, 255)
 
-width, height = 600, 400
+width, height = 700, 600
 game_display = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Snake Game')
 
@@ -21,7 +21,7 @@ snake_speed = 10
 font_style = pygame.font.SysFont(None, 50)
 
 def Your_score(score):
-    value = font_style.render("Your Score: " + str(score), True, red)
+    value = font_style.render("Your Score: " + str(score), True, white)
     game_display.blit(value, [0, 0])
 
 
